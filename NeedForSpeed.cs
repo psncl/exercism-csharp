@@ -1,5 +1,3 @@
-using System.Reflection.Metadata.Ecma335;
-
 class RemoteControlCar
 {
     private int speed;
