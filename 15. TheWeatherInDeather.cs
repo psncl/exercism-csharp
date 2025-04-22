@@ -1,3 +1,6 @@
+// https://exercism.org/tracks/csharp/exercises/the-weather-in-deather
+// Practice refactoring and switch expressions
+
 public class WeatherStation
 {
     private Reading reading;
