@@ -1,3 +1,5 @@
+// https://exercism.org/tracks/csharp/exercises/remote-control-cleanup
+
 public class RemoteControlCar
 {
     public string CurrentSponsor { get; private set; }
@@ -23,8 +25,8 @@ public class RemoteControlCar
     {
         currentSpeed = speed;
     }
-    
-    private class CarTelemetry: ITelemetry
+
+    private class CarTelemetry : ITelemetry
     {
         private readonly RemoteControlCar _car;
 
@@ -55,7 +57,7 @@ public class RemoteControlCar
 
             _car.SetSpeed(new Speed(amount, speedUnits));
         }
-        
+
     }
 
     private enum SpeedUnits
