@@ -1,3 +1,5 @@
+// https://exercism.org/tracks/csharp/exercises/hyperinflation-hits-hyperia
+
 public static class CentralBank
 {
     public static string DisplayDenomination(long @base, long multiplier)

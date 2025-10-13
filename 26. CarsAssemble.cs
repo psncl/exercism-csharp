@@ -1,3 +1,5 @@
+// https://exercism.org/tracks/csharp/exercises/cars-assemble
+
 static class AssemblyLine
 {
     private const int CarsPerHour = 221;
@@ -13,7 +15,7 @@ static class AssemblyLine
             _ => throw new ArgumentOutOfRangeException(nameof(speed), speed, "Invalid speed")
         };
     }
-    
+
     public static double ProductionRatePerHour(int speed)
     {
         return speed * CarsPerHour * SuccessRate(speed);
@@ -21,6 +23,6 @@ static class AssemblyLine
 
     public static int WorkingItemsPerMinute(int speed)
     {
-        return (int) (ProductionRatePerHour(speed) / 60);
+        return (int)(ProductionRatePerHour(speed) / 60);
     }
 }

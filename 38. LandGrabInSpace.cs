@@ -1,3 +1,5 @@
+// https://exercism.org/tracks/csharp/exercises/land-grab-in-space
+
 public struct Coord
 {
     public Coord(ushort x, ushort y)

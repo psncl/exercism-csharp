@@ -1,3 +1,5 @@
+// https://exercism.org/tracks/csharp/exercises/building-telemetry
+
 public class RemoteControlCar
 {
     private int batteryPercentage = 100;
@@ -31,7 +33,7 @@ public class RemoteControlCar
             distanceDrivenInMeters = -1;
             return false;
         }
-        
+
         latestSerialNum = serialNum;
         batteryPercentage = this.batteryPercentage;
         distanceDrivenInMeters = this.distanceDrivenInMeters;
@@ -56,8 +58,8 @@ public class TelemetryClient
     public string GetBatteryUsagePerMeter(int serialNum)
     {
         int batteryPercentage, distanceDrivenInMeters;
-        bool telemetryExists = car.GetTelemetryData(ref serialNum, out batteryPercentage, out distanceDrivenInMeters); 
-        
+        bool telemetryExists = car.GetTelemetryData(ref serialNum, out batteryPercentage, out distanceDrivenInMeters);
+
         if (!telemetryExists || distanceDrivenInMeters == 0) return "no data";
         return $"usage-per-meter={(100 - batteryPercentage) / distanceDrivenInMeters}";
     }
