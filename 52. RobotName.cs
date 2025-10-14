@@ -24,7 +24,7 @@ public class Robot
 
     public void Reset()
     {
-        ExistingRobots.Remove(Name);
+        ExistingRobots.Remove(Name); // UPDATE: This line is probably wrong. Compare with my TS solution. The getter for Name would need changing too.
         SetRandomName();
     }
 
